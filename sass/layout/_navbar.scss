@@ -1,0 +1,61 @@
+.nav-bar {
+    background-color: #6D6D6D;
+    display: flex;
+    justify-content: space-evenly;
+
+    & .contenedor {
+        margin-bottom: .25rem;
+        padding: 0;
+
+        /* -- Estilos barra busqueda y boton buscar -- */
+        & .container-fluid {
+
+            & .navbar-collapse {
+
+                & .nav-principal {
+
+                    & .nav-item {
+                        
+                        & a {
+                            color: $white;
+                            font-weight: bold;
+                            font-size: 2rem;
+                            padding: 1rem;
+                            margin: 0 2rem;
+        
+                            &:hover {
+                                color: aqua;
+                                background-color: #464646;
+                                cursor: pointer;
+                                transition: color 0.5s;
+                            }
+                        }
+                    }
+                }
+    
+                & .formulario-search {
+                    height: 3.5rem;
+
+                    & .buscar{
+                        font-size: 1.5rem;
+                    }
+                
+                    & .btn-st {
+                        margin-left: 1rem;
+                        width: 15rem;
+                        background-color: $white;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        border: solid black;
+                        color: $black;
+                
+                        &:hover{
+                            cursor: pointer;
+                            background-color: aqua;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

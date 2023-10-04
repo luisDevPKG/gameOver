@@ -1,0 +1,55 @@
+/* --- Vista Tablets --- */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        & .contenedor {
+
+            & .container-fluid {
+    
+                & .navbar-collapse {
+    
+                    & .formulario-search {
+        
+                        & .buscar {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ofertas h2 {
+        font-size: 3.3rem;
+    }
+    .ofertas .promociones {
+
+        & .boton-slider {
+            left: 40%;
+            bottom: 2.5%;
+        }
+    }
+    /* -- Plataformas -- */
+    .exclusivos {
+        width: 80%;
+
+        & .grid-container {
+            display: unset;
+
+            & .juego-trailer {
+                /* Frame juego */
+                margin: 3rem 0;
+
+                & iframe {
+                    width: 100%;
+                    height: 40rem;
+                }
+            }
+        }
+    }
+    /* -- Contactanos -- */
+    .formulario {
+
+        & h3 {
+            text-align: justify;
+        }
+    }
+}
