@@ -37,7 +37,20 @@
     }
     /* Plataformas */
     .exclusivos {
-        width: 90%;
+        width: 100%;
+
+        & .container__plataforma {
+
+            & .row__space--st {
+
+                & .card-container {
+                    
+                    & .card__container--st {
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
     /* Pago */
     .game-info {

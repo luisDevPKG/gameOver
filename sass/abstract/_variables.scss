@@ -165,30 +165,32 @@ $contenedor: juego-1, juego-2, juego-3;
     border: solid black;
     color: $white;
 }
-/* Grilla Plataformas */
-@mixin grid-plataforma {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 4rem;
-    grid-row-gap: 6rem;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
 /* Contenedor Card - Plataformas */
 @mixin card-con-plataforma {
-    width: 100%;
+    width: 90%;
     border: solid black;
     border-radius: 1.5rem;
     background-color: #eaeaea;
-    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 8px -7px rgba(0,0,0,0.75);
 }
 /* Imagenes Card - Plataformas */
 @mixin img-card-plataforma {
     margin: 0 auto;
     width: 100%;
+    height: 40rem;
     padding: 3rem;
     border-radius: 4rem;
+}
+/* Estilo boton comprar - plataformas */
+@mixin btn-comprar {
+    padding: .5rem 3rem;
+    background-color: green;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $white;
+    border-radius: .5rem;
+    border: solid green;
 }
 /* Grilla Pagos */
 @mixin grid-pago {

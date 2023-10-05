@@ -113,17 +113,22 @@
     /* Plataformas */
     .exclusivos {
         width: 80%;
-    }
-    .exclusivos .grid-container {
-        display: unset;
-    }
-    /* Frame juego */
-    .exclusivos .grid-container .juego-trailer {
-        margin: 3rem 0;
-    }
-    .exclusivos .grid-container .juego-trailer iframe {
-        width: 100%;
-        height: 40rem;
+
+        & .container__plataforma {
+
+            & .row__space--st {
+                display: unset;
+
+                & .card-container {
+                    height: 70rem;
+                    
+                    & .card__container--st {
+                        width: 80%;
+                        margin-bottom: 4rem;
+                    }
+                }
+            }
+        }
     }
     /* Pago */
     .game-info {

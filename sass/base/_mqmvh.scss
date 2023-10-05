@@ -111,36 +111,6 @@
     .copyrigth {
         margin-top: 1rem;
     }
-    /* Plataformas */
-    .exclusivos {
-        
-        & .exclusivo__consola--st {
-            font-size: 2rem;
-        }
-
-        & .grid-container {
-
-            & .card-container {
-
-                & .card-info {
-
-                    & .enlaces {
-                        /* enlaces card */
-                        font-size: 2rem;
-
-                        & .card_link--opt {
-                            display: block;
-                            margin: 0 2rem;
-
-                            &:nth-child(1) {
-                                margin-bottom: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     /* Pago */
     .game-info {
 

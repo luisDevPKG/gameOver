@@ -29,21 +29,7 @@
     }
     /* -- Plataformas -- */
     .exclusivos {
-        width: 80%;
-
-        & .grid-container {
-            display: unset;
-
-            & .juego-trailer {
-                /* Frame juego */
-                margin: 3rem 0;
-
-                & iframe {
-                    width: 100%;
-                    height: 40rem;
-                }
-            }
-        }
+        width: 100%;
     }
     /* -- Contactanos -- */
     .formulario {

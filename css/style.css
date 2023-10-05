@@ -18,9 +18,9 @@
 /* Estilo Formulario - contactanos */
 /* Radio buttons formulario - contactanos*/
 /* Boton enviar formulario - contactanos*/
-/* Grilla Plataformas */
 /* Contenedor Card - Plataformas */
 /* Imagenes Card - Plataformas */
+/* Estilo boton comprar - plataformas */
 /* Grilla Pagos */
 /* Contenedor Card Juego - Pago */
 /* Imagen Card - Pago */
@@ -410,84 +410,74 @@ header {
 /* Plataformas */
 .exclusivos {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 .exclusivos .exclusivo__consola--st {
   padding: 4rem 0;
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
+  text-align: center;
 }
-.exclusivos .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 4rem;
-  grid-row-gap: 6rem;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 5rem;
+.exclusivos .container__plataforma {
+  max-width: 90%;
+  margin-bottom: 3rem;
 }
-.exclusivos .grid-container .card-container {
-  width: 100%;
+.exclusivos .container__plataforma .row__space--st {
+  margin-bottom: 4rem;
+}
+.exclusivos .container__plataforma .row__space--st .card-container {
+  display: flex;
+  justify-content: center;
+  height: 65rem;
+}
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st {
+  width: 90%;
   border: solid black;
   border-radius: 1.5rem;
   background-color: #eaeaea;
-  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.75);
+  /* Animacion */
+  transition: transform 0.3s ease-in-out;
 }
-.exclusivos .grid-container .card-container .img--card {
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st:hover {
+  transform: translateY(-20px);
+}
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .img--card {
   margin: 0 auto;
   width: 100%;
+  height: 40rem;
   padding: 3rem;
   border-radius: 4rem;
 }
-.exclusivos .grid-container .card-container .card-info {
-  margin: 0 3rem;
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .texto {
+  margin: 0 2rem;
 }
-.exclusivos .grid-container .card-container .card-info .texto .card__title--st {
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .texto .card__title--st {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-.exclusivos .grid-container .card-container .card-info .texto .card__text--st {
-  margin-top: 1rem;
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .texto .card__text--st {
   text-align: justify;
   font-size: 1.3rem;
 }
-.exclusivos .grid-container .card-container .card-info .comentarios .comentario-info {
-  /* comentarios card */
-  display: flex;
-  align-items: center;
-  padding: 1rem;
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .btn__comprar {
+  margin: 0 auto;
 }
-.exclusivos .grid-container .card-container .card-info .comentarios .comentario-info .icon__user--dm {
-  width: 5rem;
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .btn__comprar .btn__comprar--st {
+  padding: 0.5rem 3rem;
+  background-color: green;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid green;
 }
-.exclusivos .grid-container .card-container .card-info .comentarios .comentario-info .text__user--st {
-  margin-left: 1.2rem;
-  text-align: justify;
-  font-size: 1.1rem;
-}
-.exclusivos .grid-container .card-container .card-info .comentarios .comentario-info .text__user--st span {
-  margin-left: 1rem;
-}
-.exclusivos .grid-container .card-container .card-info .enlaces {
-  /* enlaces card */
-  text-align: center;
-  font-size: 1.4rem;
-  padding-bottom: 2rem;
-}
-.exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
-  margin: 0 1.3rem;
-  text-decoration: none;
-  color: #1264FF;
-  display: inline-block;
-}
-.exclusivos .grid-container .juego-trailer {
-  /* Frame juego */
-  padding: 1rem 0 1rem 1rem;
-}
-.exclusivos .grid-container .juego-trailer iframe {
-  width: 50vw;
-  height: 70rem;
+.exclusivos .container__plataforma .row__space--st .card-container .card__container--st .btn__comprar .btn__comprar--st:hover {
+  background-color: #15E515;
+  cursor: pointer;
+  transition: color 0.5s;
 }
 
 /* Pago */
@@ -790,7 +780,7 @@ header {
 
 /* Media queries */
 /* --- Vista Escritorio -- pantallas extra grandes -- */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .titulo .contenido-titulo h1 {
     font-size: 3rem;
   }
@@ -846,6 +836,13 @@ header {
   .planes .planes-info {
     grid-template-rows: unset;
     gap: 3rem;
+  }
+  /* Plataformas */
+  .exclusivos .container__plataforma {
+    max-width: 100%;
+  }
+  .exclusivos .container__plataforma .row__space--st .card-container .card__container--st {
+    width: 95%;
   }
   /* -- Contactanos -- */
   .formulario .formulario-informacion {
@@ -957,16 +954,15 @@ header {
   .exclusivos {
     width: 80%;
   }
-  .exclusivos .grid-container {
+  .exclusivos .container__plataforma .row__space--st {
     display: unset;
   }
-  /* Frame juego */
-  .exclusivos .grid-container .juego-trailer {
-    margin: 3rem 0;
+  .exclusivos .container__plataforma .row__space--st .card-container {
+    height: 70rem;
   }
-  .exclusivos .grid-container .juego-trailer iframe {
-    width: 100%;
-    height: 40rem;
+  .exclusivos .container__plataforma .row__space--st .card-container .card__container--st {
+    width: 80%;
+    margin-bottom: 4rem;
   }
   /* Pago */
   .game-info .grid-container-pago {
@@ -1059,18 +1055,7 @@ header {
   }
   /* -- Plataformas -- */
   .exclusivos {
-    width: 80%;
-  }
-  .exclusivos .grid-container {
-    display: unset;
-  }
-  .exclusivos .grid-container .juego-trailer {
-    /* Frame juego */
-    margin: 3rem 0;
-  }
-  .exclusivos .grid-container .juego-trailer iframe {
     width: 100%;
-    height: 40rem;
   }
   /* -- Contactanos -- */
   .formulario h3 {
@@ -1183,21 +1168,6 @@ header {
   .copyrigth {
     margin-top: 1rem;
   }
-  /* Plataformas */
-  .exclusivos .exclusivo__consola--st {
-    font-size: 2rem;
-  }
-  .exclusivos .grid-container .card-container .card-info .enlaces {
-    /* enlaces card */
-    font-size: 2rem;
-  }
-  .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt {
-    display: block;
-    margin: 0 2rem;
-  }
-  .exclusivos .grid-container .card-container .card-info .enlaces .card_link--opt:nth-child(1) {
-    margin-bottom: 2rem;
-  }
   /* Pago */
   .game-info .grid-container-pago .card-container-form-pago {
     width: 80%;
@@ -1272,6 +1242,9 @@ header {
   }
   /* Plataformas */
   .exclusivos {
+    width: 100%;
+  }
+  .exclusivos .container__plataforma .row__space--st .card-container .card__container--st {
     width: 90%;
   }
   /* Pago */
