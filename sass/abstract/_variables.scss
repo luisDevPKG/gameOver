@@ -3,6 +3,21 @@ $black: #000000;
 $white: #ffffff;
 $background: #F3F3F3;
 
+/* Estilos opciones nav */
+@mixin nav-op-st {
+    color: $white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+}
+/* Hover opciones nav */
+@mixin hover-nav-st {
+    color: aqua;
+    background-color: #464646;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
 /* Imagenes background - seccion ofertas */
 $imgbg-juegos: (
     juego-1: url(../assets/ofertas/background-1.png),

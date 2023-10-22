@@ -29,10 +29,18 @@
                     & .nav-principal {
 
                         & .nav-item {
+                            display: flex;
+                            justify-content: center;
 
                             & a {
                                 font-size: 1.8rem;
+                            }
+
+                            & .select__pfm--st {
+                                width: 70%;
+                                font-size: 1.8rem;
                                 text-align: center;
+                                margin: unset;
                             }
                         }
                     }
@@ -52,6 +60,19 @@
                         & .btn-st {
                             height: unset;
                             width: 12rem;
+                        }
+                    }
+
+                    & .nav-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        & .nav-icon__img {
+    
+                            & .nav-icon__img-sty {
+                                padding-bottom: .5rem;
+                            }
                         }
                     }
                 }

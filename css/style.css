@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* abstracts */
 /* Defino la paleta de colores de la pagina */
+/* Estilos opciones nav */
+/* Hover opciones nav */
 /* Imagenes background - seccion ofertas */
 /* Imagen del juego - seccion ofertas */
 /* Contenedores juegos slider */
@@ -91,6 +93,9 @@ header {
   padding: 0;
   /* -- Estilos barra busqueda y boton buscar -- */
 }
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item {
+  margin: 0 2rem;
+}
 .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
   color: #ffffff;
   font-weight: bold;
@@ -99,6 +104,26 @@ header {
   margin: 0 2rem;
 }
 .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a:hover {
+  color: aqua;
+  background-color: #464646;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item .select__pfm--st {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0.2rem 1rem;
+  background-color: #6D6D6D;
+  border: none;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item .select__pfm--st:focus {
+  border-color: #6D6D6D;
+  outline: 0;
+  box-shadow: none;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item .select__pfm--st:hover {
   color: aqua;
   background-color: #464646;
   cursor: pointer;
@@ -122,6 +147,11 @@ header {
 .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st:hover {
   cursor: pointer;
   background-color: aqua;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img .nav-icon__img-sty {
+  margin-left: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 /* Ofertas */
@@ -455,11 +485,12 @@ header {
 }
 .exclusivos .container__plataforma .row__space--st .card-container .card__container--st .texto .card__title--st {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 .exclusivos .container__plataforma .row__space--st .card-container .card__container--st .texto .card__text--st {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .exclusivos .container__plataforma .row__space--st .card-container .card__container--st .btn__comprar {
   margin: 0 auto;
@@ -786,7 +817,10 @@ header {
   }
   .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
     font-size: 1.5rem;
-    margin: 0 3rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item .select__pfm--st {
+    font-size: 1.5rem;
+    margin: 0 1rem;
   }
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     margin-left: 3rem;
@@ -800,6 +834,9 @@ header {
     height: 2.7rem;
     width: 10rem;
     font-size: 1.2rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img .nav-icon__img-sty {
+    margin-left: 1rem;
   }
   /* -- Ofertas -- */
   .ofertas .promociones {
@@ -885,9 +922,18 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-toggler {
     background-color: #CBCBCB;
   }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item {
+    display: flex;
+    justify-content: center;
+  }
   .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item a {
     font-size: 1.8rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-principal .nav-item .select__pfm--st {
+    width: 70%;
+    font-size: 1.8rem;
     text-align: center;
+    margin: unset;
   }
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search {
     /* Boton hamburguesa seccion formulario buscar */
@@ -903,6 +949,14 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
     height: unset;
     width: 12rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img .nav-icon__img-sty {
+    padding-bottom: 0.5rem;
   }
   /* Ofertas */
   .ofertas .promociones {

@@ -15,19 +15,31 @@
                 & .nav-principal {
 
                     & .nav-item {
+                        margin: 0 2rem;
                         
                         & a {
-                            color: $white;
-                            font-weight: bold;
-                            font-size: 2rem;
-                            padding: 1rem;
+                            @include nav-op-st;
                             margin: 0 2rem;
         
                             &:hover {
-                                color: aqua;
-                                background-color: #464646;
-                                cursor: pointer;
-                                transition: color 0.5s;
+                                @include hover-nav-st;
+                            }
+                        }
+
+                        & .select__pfm--st {
+                            @include nav-op-st;
+                            margin: .2rem 1rem;
+                            background-color: #6D6D6D;
+                            border: none;
+
+                            &:focus {
+                                border-color: #6D6D6D;
+                                outline: 0;
+                                box-shadow: none;
+                            }
+        
+                            &:hover {
+                                @include hover-nav-st;
                             }
                         }
                     }
@@ -52,6 +64,18 @@
                         &:hover{
                             cursor: pointer;
                             background-color: aqua;
+                        }
+                    }
+                }
+
+                & .nav-icon {
+
+                    & .nav-icon__img {
+
+                        & .nav-icon__img-sty {
+                            margin-left: 5rem;
+                            width: 4.5rem;
+                            height: 4.5rem;
                         }
                     }
                 }
