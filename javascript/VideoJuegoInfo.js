@@ -13,6 +13,7 @@ class VideoJuegoInfo {
     precioReal = null;
     descuento = null;
     precioFinal = null;
+    plataforma = null;
 
     // establezco el constructor para cada card
     // adentro identifico el id (a partir de un query string) para en base a este id pintar la informacion o crear el objeto VideoJuegoInfo
@@ -34,6 +35,7 @@ class VideoJuegoInfo {
         const precioReal = document.getElementById("precioReal");
         const descuento = document.getElementById("descuento");
         const precioFinal = document.getElementById("precioFinal");
+        const plataforma = document.getElementById("plataforma");
 
 
         // Asigno los valores a cada elemento html
@@ -47,6 +49,7 @@ class VideoJuegoInfo {
         precioReal.textContent = "$" + this.precioReal + " USD";
         descuento.textContent = this.descuento + "%";
         precioFinal.textContent = "$" + this.precioFinal + " USD";
+        plataforma.textContent = this.plataforma;
 
     }
 
@@ -54,7 +57,6 @@ class VideoJuegoInfo {
     cargarJuego() {
     
         let juegos;
-
         // cargo la informacion del JSON de forma asincronica
         fetch ('../javascript/videojuegos.json')
         .then(response => response.json())
@@ -63,7 +65,7 @@ class VideoJuegoInfo {
         // accedo a los datos del archivo json
         // El método find lo utilizo para buscar el objeto en juegos con el id que coincida con el id obtenido del constructor.
         juegos = data.juegos.find((j)=> {
-        return j.id == this.id;
+            return j.id == this.id;
         });
 
         // asigno cada indice encontrado en el json de juegos a su parametro correspondiente
@@ -77,8 +79,7 @@ class VideoJuegoInfo {
         this.precioReal = juegos.precio;
         this.descuento = juegos.descuento;
         this.precioFinal = parseFloat(this.precioReal) - (parseFloat(this.precioReal * (parseFloat(this.descuento)/100)));
-
-
+        this.plataforma = juegos.plataforma;
         // pinto lada data en el html de acuerdo al indice obtenido por cada id
         this.mostrarInfo();
     
@@ -86,7 +87,7 @@ class VideoJuegoInfo {
         .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
         });
-        }
+    }
 }
 
 // instancio objetos de la clase VideoJuegoInfo

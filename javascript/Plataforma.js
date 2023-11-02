@@ -79,73 +79,73 @@ class Plataforma {
     ];
     videoJuegosXbox = [
         {
-            "id": 1,
+            "id": 13,
             "img": "../assets/juegos/xbox/hellblade.jpeg",
             "titulo": "Hellblade",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 2,
+            "id": 14,
             "img": "../assets/juegos/xbox/stalker2.jpeg",
             "titulo": "Stalker 2",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 3,
+            "id": 15,
             "img": "../assets/juegos/xbox/starfield.jpg",
             "titulo": "Starfield",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 4,
+            "id": 16,
             "img": "../assets/juegos/xbox/Redfall.jpeg",
             "titulo": "RedFall",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 5,
+            "id": 17,
             "img": "../assets/juegos/xbox/Halo-Infinite.webp",
             "titulo": "Halo Infinite",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 6,
+            "id": 18,
             "img": "../assets/juegos/xbox/ravenlok.jpeg",
             "titulo": "Ravenlok",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 7,
+            "id": 19,
             "img": "../assets/juegos/xbox/forza-horizon-5.jpeg",
             "titulo": "Forza Horizon 5",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 8,
+            "id": 20,
             "img": "../assets/juegos/xbox/the-gunk.jpeg",
             "titulo": "The Gunk",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 9,
+            "id": 21,
             "img": "../assets/juegos/xbox/halo-the-master-chief-collection.jpeg",
             "titulo": "Halo: The Master Chief Collection",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 10,
+            "id": 22,
             "img": "../assets/juegos/xbox/titan-fall.jpeg",
             "titulo": "Titanfall",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 11,
+            "id": 23,
             "img": "../assets/juegos/xbox/gears-5.webp",
             "titulo": "Gears 5",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
         },
         {   
-            "id": 12,
+            "id": 24,
             "img": "../assets/juegos/xbox/Forza-Motorsport.webp",
             "titulo": "Forza Motorsport",
             "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
@@ -157,28 +157,6 @@ class Plataforma {
         // asigno los elementos de html para obtener y mostrar informacion
         this.opcionSelect = document.getElementById("plataformas");
         this.card = document.getElementById("card-template");
-
-        // agrego un evento de cambio dependiendo de la opcion marcada en el select
-        this.opcionSelect.addEventListener("change", this.redirigir.bind(this))
-    }
-
-    // este metodo redirige al usuario de acuerdo a la opcion marcada en el select
-    redirigir() {
-        // obtengo la opcion seleccionada
-        const opcionEscogida = this.opcionSelect.value;
-        console.log(opcionEscogida)
-
-        // Valido si se escogió una opción -- es decir, si no está vacío
-        if (opcionEscogida) {
-            // se redirige a la opcion que escogió
-            window.location.href = opcionEscogida;
-        }
-    }
-
-    // obtengo la url de la pagina
-    obtenerUrl(){
-        //obtengo la url
-        return window.location.href
     }
 
     // pinto o muestro la data de cards para plataforma playstation
@@ -194,7 +172,7 @@ class Plataforma {
                 <p class="card__text--st">${x.descripcion}</p>
             </div>
             <div class="card-body btn__comprar">
-                <button class="btn__comprar--st" onclick="redirigePago(${x.id})" id="boton1">Comprar</button>
+                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Comprar</button>
             </div>
         </div>
         `;
@@ -213,11 +191,17 @@ class Plataforma {
                 <p class="card__text--st">${x.descripcion}</p>
             </div>
             <div class="card-body btn__comprar">
-                <button class="btn__comprar--st" onclick="redirigePago(${x.id})" id="boton1">Comprar</button>
+                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Comprar</button>
             </div>
         </div>
         `;
         })
+    }
+
+    // obtengo la url de la pagina
+    obtenerUrl(){
+        //obtengo la url
+        return window.location.href
     }
 
     // Se muestra las cards de los diferentes juegos en base a la plataforrma escogida
@@ -233,7 +217,3 @@ class Plataforma {
 }
 const plataforma = new Plataforma()
 plataforma.mostrarJuegos();
-
-// plataforma.opcionSelect.addEventListener("change", () => {
-//     plataforma.redirigir();
-// });
