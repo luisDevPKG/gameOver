@@ -97,15 +97,13 @@
     .exclusivos {
 
         & .container__plataforma {
-            max-width: 100%;
+            max-width: 95%;
 
-            & .row__space--st {
+            & .card-container {
+                margin-left: unset;
 
-                & .card-container {
-
-                    & .card__container--st {
-                        width: 95%;
-                    }
+                & .card__container--st {
+                    width: 95%;
                 }
             }
         }

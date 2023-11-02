@@ -137,16 +137,14 @@
 
         & .container__plataforma {
 
-            & .row__space--st {
-                display: unset;
+            & .card-container {
+                grid-template-columns: 1fr;
+                justify-content: center;
 
-                & .card-container {
-                    height: 70rem;
-                    
-                    & .card__container--st {
-                        width: 80%;
-                        margin-bottom: 4rem;
-                    }
+                & .card__container--st {
+                    width: 80%;
+                    margin-bottom: 4rem;
+                    margin: 0 auto;
                 }
             }
         }

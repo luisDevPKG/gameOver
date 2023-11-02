@@ -11,60 +11,60 @@
     }
 
     & .container__plataforma {
-        max-width: 90%;
-        margin-bottom: 3rem;
+        max-width: 100%;
+        margin: 0 auto;
 
-        & .row__space--st {
+        & .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+            margin-left: 5rem;
             margin-bottom: 4rem;
 
-            & .card-container {
-                display: flex;
-                justify-content: center;
-                height: 65rem;
-                
-                & .card__container--st {
-                    @include card-con-plataforma;
-                    /* Animacion */
-                    transition: transform .3s ease-in-out;
+            & .card__container--st {
+                @include card-con-plataforma;
+                /* Animacion */
+                transition: transform .3s ease-in-out;
 
-                    &:hover {
-                        transform: translateY(-20px);
+                &:hover {
+                    transform: translateY(-20px);
+                }
+
+                & .img--card {
+                    @include img-card-plataforma;
+                }
+
+                & .texto {
+                    margin: 0 2rem;
+
+                    & .card__title--st {
+                        font-weight: bold;
+                        font-size: 2.2rem;
+                        margin-bottom: 1rem;
                     }
 
-                    & .img--card {
-                        @include img-card-plataforma;
+                    & .card__text--st {
+                        text-align: justify;
+                        font-size: 1.4rem;
                     }
+                }
 
-                    & .texto {
-                        margin: 0 2rem;
+                & .btn__comprar {
+                    margin: 0 auto;
 
-                        & .card__title--st {
-                            font-weight: bold;
-                            font-size: 2.2rem;
-                            margin-bottom: 1rem;
-                        }
-    
-                        & .card__text--st {
-                            text-align: justify;
-                            font-size: 1.4rem;
-                        }
-                    }
+                    & .btn__comprar--st {
+                        @include btn-comprar;
 
-                    & .btn__comprar {
-                        margin: 0 auto;
-
-                        & .btn__comprar--st {
-                            @include btn-comprar;
-
-                            &:hover {
-                                background-color: #15E515;
-                                cursor: pointer;
-                                transition: color 0.5s;
-                            }
+                        &:hover {
+                            background-color: #15E515;
+                            cursor: pointer;
+                            transition: color 0.5s;
                         }
                     }
                 }
             }
         }
+
     }
 }

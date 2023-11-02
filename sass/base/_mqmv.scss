@@ -41,13 +41,10 @@
 
         & .container__plataforma {
 
-            & .row__space--st {
-
-                & .card-container {
+            & .card-container {
                     
-                    & .card__container--st {
-                        width: 90%;
-                    }
+                & .card__container--st {
+                    width: 95%;
                 }
             }
         }
