@@ -157,10 +157,20 @@ class Plataforma {
         // asigno los elementos de html para obtener y mostrar informacion
         this.opcionSelect = document.getElementById("plataformas");
         this.card = document.getElementById("card-template");
+
+        // obtengo la referencia del boton de busqueda
+        const btnBuscar = document.getElementById("btn-buscar");
+        // Agrego un controlador de eventos para el botón de búsqueda
+        btnBuscar.addEventListener("click", () => {
+            this.buscar();
+        })
     }
 
     // pinto o muestro la data de cards para plataforma playstation
     mostrarJuegosPlayStation(){
+        // limpio el contenido de la tarjeta
+        this.card.innerHTML = '';
+
         // mapeo la informacion del array
         this.videoJuegosPlayStation.map((x)=> {
         // por cada objeto del array se crea una card
@@ -172,7 +182,7 @@ class Plataforma {
                 <p class="card__text--st">${x.descripcion}</p>
             </div>
             <div class="card-body btn__comprar">
-                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Comprar</button>
+                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Ver informacion</button>
             </div>
         </div>
         `;
@@ -181,6 +191,10 @@ class Plataforma {
 
     // pinto o muestro la data de cards para plataforma xbox
     mostrarJuegosXbox(){
+        // limpio el contenido de la tarjeta
+        this.card.innerHTML = '';
+
+        // mapeo la informacion del array
         this.videoJuegosXbox.map((x)=> {
         // por cada objeto del array se crea una card
         this.card.innerHTML += `
@@ -212,6 +226,53 @@ class Plataforma {
             this.mostrarJuegosPlayStation();
         } else {
             this.mostrarJuegosXbox();
+        }
+    }
+
+    // Obtiene las cards de los juegos que se buscan
+    buscar(){
+        // obtengo la data ingresada en el input de buscar y la transformo todo en miniscula
+        const inputBusqueda = document.getElementById("buscar").value.toLowerCase();
+
+        // Valido si estoy en plataforma playstation o xbox
+        const url = this.obtenerUrl();
+        const plataforma = url.endsWith("playstation.html") ? "PlayStation" : "Xbox";
+
+        // Obtengo los juegos según la plataforma
+        const juegosInfo = plataforma === "PlayStation" ? this.videoJuegosPlayStation : this.videoJuegosXbox;
+        console.log(juegosInfo)
+
+        // Filtro los juegos que coincidan con la busqueda
+        const juegoFiltrado = juegosInfo.filter((juego) => {
+            return juego.titulo.toLowerCase().includes(inputBusqueda)
+        })
+
+        // limpio el contenido de la tarjeta
+        this.card.innerHTML = '';
+        
+        if (juegoFiltrado.length == 0 ){
+            this.card.innerHTML += `
+            <div class="card card__container--st">
+                <h2 class="exclusivo__consola--st">No se encontraron resultados</h2>
+            </div>
+            `;
+        } else {
+            // mapeo la informacion del array
+            juegoFiltrado.map((juego) => {
+            // por cada objeto del array se crea una card
+            this.card.innerHTML += `
+            <div class="card card__container--st">
+                <img src="${juego.img}" class="img--card" alt="${juego.titulo} juego">
+                <div class="card-body texto">
+                    <h5 class="card__title--st">${juego.titulo}</h5>
+                    <p class="card__text--st">${juego.descripcion}</p>
+                </div>
+                <div class="card-body btn__comprar">
+                    <button class="btn__comprar--st" onclick="redirigePago(${juego.id})">Ver informacion</button>
+                </div>
+            </div>
+            `;
+            })
         }
     }
 }
