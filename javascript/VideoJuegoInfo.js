@@ -25,17 +25,17 @@ class VideoJuegoInfo {
     // metodo que me va a mostrar la informacion en el html
     mostrarInfo(){
         // obtengo los elementos del html para mostrar la informacion
-        const img = document.getElementById("imagen");
-        const titulo = document.getElementById("titulo");
-        const descripcion = document.getElementById("descripcion");
-        const voces = document.getElementById("voces");
-        const textos = document.getElementById("textos");
-        const peso = document.getElementById("peso");
-        const genero = document.getElementById("genero");
-        const precioReal = document.getElementById("precioReal");
-        const descuento = document.getElementById("descuento");
-        const precioFinal = document.getElementById("precioFinal");
-        const plataforma = document.getElementById("plataforma");
+        const img = document.querySelector("img.img--juego#imagen");
+        const titulo = document.querySelector("h2.card__title--st#titulo");
+        const descripcion = document.querySelector("p.card__text--st#descripcion");
+        const voces = document.querySelector("p.text__caracteristica--st#voces");
+        const textos = document.querySelector("p.text__caracteristica--st#textos");
+        const peso = document.querySelector("p.text__caracteristica--st#peso");
+        const genero = document.querySelector("p.text__caracteristica--st#genero");
+        const precioReal = document.querySelector("p.precio__descuento--st#precioReal");
+        const descuento = document.querySelector("p.porcentaje__descuento--st#descuento");
+        const precioFinal = document.querySelector("p.precio__juego--st#precioFinal");
+        const plataforma = document.querySelector("p.text__plataforma--st#plataforma");
 
 
         // Asigno los valores a cada elemento html

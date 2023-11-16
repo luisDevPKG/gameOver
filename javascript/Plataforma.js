@@ -166,6 +166,7 @@ class Plataforma {
         })
     }
 
+    // metodo que contiene la platilla html de cada card
     cardVideoJuego(videojuego) {
         return `<div class="card card__container--st">
                     <img src="${videojuego.img}" class="img--card" alt="${videojuego.titulo} juego">
@@ -179,10 +180,21 @@ class Plataforma {
                 </div>`;
     }
 
+    // metodo que contiene la platilla html si no se encuentran productos
     cardNoFound(){
         return `<div class="card card__container--st" style="grid-column: 2/3">
                     <h2 class="exclusivo__consola--st">No se encontraron resultados</h2>
                 </div>`;
+    }
+
+    // establece un tooltip en los botones de cada card
+    infoTooltip(){
+        const btnVerInfo = document.querySelectorAll("button.btn__comprar--st")
+        btnVerInfo.forEach(boton => {
+            boton.addEventListener("mouseover", ()=> {
+                boton.title = "Click aqui para ver la informacion completa"
+            })
+        })
     }
 
     // pinto o muestro la data de cards para plataforma playstation
@@ -194,6 +206,9 @@ class Plataforma {
             this.videoJuegosPlayStation.map((videojuego)=> {
             // por cada objeto del array se crea una card
             this.card.innerHTML += this.cardVideoJuego(videojuego)})
+
+            // tooltip para el boton ver informacion de las cards
+            this.infoTooltip()
         } else {
             this.card.innerHTML += this.cardNoFound()
         }
@@ -203,11 +218,14 @@ class Plataforma {
     mostrarJuegosXbox(){
         if (this.videoJuegosXbox.length > 0){
             // limpio el contenido de la tarjeta
-           this.card.innerHTML = '';
-           // mapeo la informacion del array
-           this.videoJuegosXbox.map((videojuego)=> {
-           // por cada objeto del array se crea una card
-           this.card.innerHTML += this.cardVideoJuego(videojuego)})
+            this.card.innerHTML = '';
+            // mapeo la informacion del array
+            this.videoJuegosXbox.map((videojuego)=> {
+            // por cada objeto del array se crea una card
+            this.card.innerHTML += this.cardVideoJuego(videojuego)})
+
+            // tooltip para el boton ver informacion de las cards
+            this.infoTooltip()
         } else {
             this.card.innerHTML += this.cardNoFound()
         }
@@ -233,7 +251,7 @@ class Plataforma {
     // Obtiene las cards de los juegos que se buscan
     buscar(){
         // obtengo la data ingresada en el input de buscar y la transformo todo en miniscula
-        const inputBusqueda = document.getElementById("buscar").value.trim().toLowerCase();
+        const inputBusqueda = document.querySelector("input.form-control#buscar").value.trim().toLowerCase();
 
         // Valido si estoy en plataforma playstation o xbox
         const url = this.obtenerUrl();
