@@ -155,61 +155,62 @@ class Plataforma {
     // establezco el constructor de plataformas
     constructor() {
         // asigno los elementos de html para obtener y mostrar informacion
-        this.opcionSelect = document.getElementById("plataformas");
-        this.card = document.getElementById("card-template");
+        this.opcionSelect = document.querySelector("select.form-select#plataformas");
+        this.card = document.querySelector("div.card-container#card-template");
 
         // obtengo la referencia del boton de busqueda
-        const btnBuscar = document.getElementById("btn-buscar");
+        const btnBuscar = document.querySelector("button.btn-st#btn-buscar");
         // Agrego un controlador de eventos para el botón de búsqueda
         btnBuscar.addEventListener("click", () => {
             this.buscar();
         })
     }
 
+    cardVideoJuego(videojuego) {
+        return `<div class="card card__container--st">
+                    <img src="${videojuego.img}" class="img--card" alt="${videojuego.titulo} juego">
+                    <div class="card-body texto">
+                        <h5 class="card__title--st">${videojuego.titulo}</h5>
+                        <p class="card__text--st">${videojuego.descripcion}</p>
+                    </div>
+                    <div class="card-body btn__comprar">
+                        <button class="btn__comprar--st" onclick="redirigePago(${videojuego.id})">Ver informacion</button>
+                    </div>
+                </div>`;
+    }
+
+    cardNoFound(){
+        return `<div class="card card__container--st" style="grid-column: 2/3">
+                    <h2 class="exclusivo__consola--st">No se encontraron resultados</h2>
+                </div>`;
+    }
+
     // pinto o muestro la data de cards para plataforma playstation
     mostrarJuegosPlayStation(){
-        // limpio el contenido de la tarjeta
-        this.card.innerHTML = '';
-
-        // mapeo la informacion del array
-        this.videoJuegosPlayStation.map((x)=> {
-        // por cada objeto del array se crea una card
-        this.card.innerHTML += `
-        <div class="card card__container--st">
-            <img src="${x.img}" class="img--card" alt="${x.titulo} juego">
-            <div class="card-body texto">
-                <h5 class="card__title--st">${x.titulo}</h5>
-                <p class="card__text--st">${x.descripcion}</p>
-            </div>
-            <div class="card-body btn__comprar">
-                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Ver informacion</button>
-            </div>
-        </div>
-        `;
-        })
+        if (this.videoJuegosPlayStation.length > 0){
+             // limpio el contenido de la tarjeta
+            this.card.innerHTML = '';
+            // mapeo la informacion del array
+            this.videoJuegosPlayStation.map((videojuego)=> {
+            // por cada objeto del array se crea una card
+            this.card.innerHTML += this.cardVideoJuego(videojuego)})
+        } else {
+            this.card.innerHTML += this.cardNoFound()
+        }
     }
 
     // pinto o muestro la data de cards para plataforma xbox
     mostrarJuegosXbox(){
-        // limpio el contenido de la tarjeta
-        this.card.innerHTML = '';
-
-        // mapeo la informacion del array
-        this.videoJuegosXbox.map((x)=> {
-        // por cada objeto del array se crea una card
-        this.card.innerHTML += `
-        <div class="card card__container--st">
-            <img src="${x.img}" class="img--card" alt="${x.titulo} juego">
-            <div class="card-body texto">
-                <h5 class="card__title--st">${x.titulo}</h5>
-                <p class="card__text--st">${x.descripcion}</p>
-            </div>
-            <div class="card-body btn__comprar">
-                <button class="btn__comprar--st" onclick="redirigePago(${x.id})">Comprar</button>
-            </div>
-        </div>
-        `;
-        })
+        if (this.videoJuegosXbox.length > 0){
+            // limpio el contenido de la tarjeta
+           this.card.innerHTML = '';
+           // mapeo la informacion del array
+           this.videoJuegosXbox.map((videojuego)=> {
+           // por cada objeto del array se crea una card
+           this.card.innerHTML += this.cardVideoJuego(videojuego)})
+        } else {
+            this.card.innerHTML += this.cardNoFound()
+        }
     }
 
     // obtengo la url de la pagina
@@ -232,7 +233,7 @@ class Plataforma {
     // Obtiene las cards de los juegos que se buscan
     buscar(){
         // obtengo la data ingresada en el input de buscar y la transformo todo en miniscula
-        const inputBusqueda = document.getElementById("buscar").value.toLowerCase();
+        const inputBusqueda = document.getElementById("buscar").value.trim().toLowerCase();
 
         // Valido si estoy en plataforma playstation o xbox
         const url = this.obtenerUrl();
@@ -250,28 +251,12 @@ class Plataforma {
         this.card.innerHTML = '';
         
         if (juegoFiltrado.length == 0 ){
-            this.card.innerHTML += `
-            <div class="card card__container--st">
-                <h2 class="exclusivo__consola--st">No se encontraron resultados</h2>
-            </div>
-            `;
+            this.card.innerHTML += this.cardNoFound()
         } else {
             // mapeo la informacion del array
             juegoFiltrado.map((juego) => {
             // por cada objeto del array se crea una card
-            this.card.innerHTML += `
-            <div class="card card__container--st">
-                <img src="${juego.img}" class="img--card" alt="${juego.titulo} juego">
-                <div class="card-body texto">
-                    <h5 class="card__title--st">${juego.titulo}</h5>
-                    <p class="card__text--st">${juego.descripcion}</p>
-                </div>
-                <div class="card-body btn__comprar">
-                    <button class="btn__comprar--st" onclick="redirigePago(${juego.id})">Ver informacion</button>
-                </div>
-            </div>
-            `;
-            })
+            this.card.innerHTML += this.cardVideoJuego(juego)})
         }
     }
 }
