@@ -77,72 +77,72 @@ const videoJuegosXbox = [
         "id": 13,
         "img": "../assets/juegos/xbox/hellblade.jpeg",
         "titulo": "Hellblade",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "En la era vikinga, una guerrera celta trastornada se lanza a las entrañas del infierno en una cruzada de visiones perturbadoras para luchar por el alma de su amante muerto. Te lleva a las entrañas de la melancólica furia de la trastornada mente de Senua.",
     },
     {   
         "id": 14,
         "img": "../assets/juegos/xbox/stalker2.jpeg",
         "titulo": "Stalker 2",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "S.T.A.L.K.E.R. 2: Heart of Chornobyl es la nueva secuela de la galardonada franquicia de videojuegos de ordenador desarrollada por GSC Game World y que ofrece una experiencia de acción y supervivencia única en la postapocalíptica Zona de Exclusión de Chernóbil.",
     },
     {   
         "id": 15,
         "img": "../assets/juegos/xbox/starfield.jpg",
         "titulo": "Starfield",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "En el año 2330, la humanidad se ha aventurado más allá de nuestro sistema solar, poblando nuevos planetas y viviendo como exploradores espaciales. Te unirás a Constelación, el último grupo de exploradores espaciales que buscan artefactos extraños por toda la galaxia, y navegarás la gran expansión del espacio en el juego más grande y ambicioso de Bethesda Game Studios.",
     },
     {   
         "id": 16,
         "img": "../assets/juegos/xbox/Redfall.jpeg",
         "titulo": "RedFall",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "La ciudad isleña de Redfall, Massachusetts, está asediada por una legión de vampiros que ha aislado a los ciudadanos del mundo exterior y ha tapado el sol. Explora el mundo abierto y sumérgete en una campaña narrativa para desvelar el misterio que se oculta tras la aparición de los vampiros. Alíate con un puñado de supervivientes para combatir contra las criaturas que amenazan con desangrar la ciudad.",
     },
     {   
         "id": 17,
         "img": "../assets/juegos/xbox/Halo-Infinite.webp",
         "titulo": "Halo Infinite",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "Cuando toda esperanza se pierde y el destino de la humanidad pende de un hilo, el Jefe Maestro está listo para enfrentarse al enemigo más despiadado al que jamás haya hecho frente.",
     },
     {   
         "id": 18,
         "img": "../assets/juegos/xbox/ravenlok.jpeg",
         "titulo": "Ravenlok",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "Tras encontrar un espejo mágico, Ravenlok se ve arrastrada a un mundo fantástico asolado por la siniestra oscuridad de una tiránica reina. Descubre qué les deparará el destino en esta conmovedora e inolvidable aventura.",
     },
     {   
         "id": 19,
         "img": "../assets/juegos/xbox/forza-horizon-5.jpeg",
         "titulo": "Forza Horizon 5",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "¡Tu aventura Horizon por excelencia te espera! Explora los dinámicos paisajes abiertos al mundo y en constante evolución de México con una acción de conducción ilimitada en cientos de los mejores autos del mundo.",
     },
     {   
         "id": 20,
         "img": "../assets/juegos/xbox/the-gunk.jpeg",
         "titulo": "The Gunk",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "En The Gunk tenemos a Rani, parte de nuestro dúo de transportistas espaciales, que lucha por ganarse el pan cuando se topa con un planeta virgen que rebosa vida. Rani y su compi han venido en busca de recursos valiosos y parece que les ha tocado el premio gordo...",
     },
     {   
         "id": 21,
         "img": "../assets/juegos/xbox/halo-the-master-chief-collection.jpeg",
         "titulo": "Halo: The Master Chief Collection",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "El emblemático viaje del Jefe Maestro incluye seis juegos creados para PC y recopilados en una sola experiencia. Ya seas un seguidor de toda la vida o descubras al Spartan 117 por primera vez, la colección Jefe Maestro te resultará la experiencia de juego definitiva de Halo.",
     },
     {   
         "id": 22,
         "img": "../assets/juegos/xbox/titan-fall.jpeg",
         "titulo": "Titanfall",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "Pilotos: no hay nada más letal en la guerra por la Frontera. Con una movilidad sin igual y la capacidad de desplegar imponentes titanes en combate, suponen la nueva evolución en el campo de batalla.",
     },
     {   
         "id": 23,
         "img": "../assets/juegos/xbox/gears-5.webp",
         "titulo": "Gears 5",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "Llega la nueva entrega de Gears, una de las sagas más aclamadas de la industria, y lo hace a lo grande. En medio de una guerra sin cuartel, Kait Diaz se marcha para desentrañar su conexión con el enemigo y descubrir la auténtica amenaza para Sera: ella misma.",
     },
     {   
         "id": 24,
         "img": "../assets/juegos/xbox/Forza-Motorsport.webp",
         "titulo": "Forza Motorsport",
-        "descripcion": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en búsqueda de respuestas, mientras que las fuerzas asgardianas se preparan para una batalla profetizada que terminará con el mundo.La amenaza del Ragnarök cada vez está más cerca. Kratos y Atreus deben elegir entre su propia seguridad y la seguridad de los reinos."
+        "descripcion": "Supera a tus rivales en la nueva carrera. Haz carreras con tus amigos en eventos multijugador arbitrados y compite con más de 500 coches en pistas de fama mundial con una IA de última generación, una física avanzada y estrategias que dependen de los neumáticos y el combustible.",
     }
 ];
