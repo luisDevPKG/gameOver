@@ -13,7 +13,7 @@ function obtenerId (){
     // busco el parametro id en la url
     const idUrl = new URLSearchParams(new URL(url).search).get('id').replace(/[^\d.]/g, '');
     const id = parseInt(idUrl, 10) // especifico la base en la que convierto el id a un entero
-    return id
+    return id;
 }
 
 // obtengo el valor del checkbox seleccionado en el tipo cuenta
@@ -99,6 +99,11 @@ function comprarJuego() {
       });
 }
 btnComprar.addEventListener('click', () => comprarJuego());
+// establece un tooltip en los botones de cada card
+btnComprar.addEventListener("mouseover", ()=> {
+    btnComprar.title = "Click aqui para agregar el producto al carrito de compras"
+})
+
 
 // alerta asesor de ventas
 function alertaAsesor(){
@@ -116,6 +121,10 @@ function alertaAsesor(){
     });
 }
 asesorButton.addEventListener('click', alertaAsesor)
+asesorButton.addEventListener("mouseover", ()=> {
+    asesorButton.title = "Click aqui para hablar con uno de nuestros asesores"
+})
+
 
 // Carrito compras
 btnCart.addEventListener('click', ()=> {

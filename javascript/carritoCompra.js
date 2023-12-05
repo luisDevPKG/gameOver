@@ -1,6 +1,7 @@
 const detalleCarrito = document.querySelector("table tbody");
 const totalCarrito = document.querySelector("td#totalCarrito");
-const btnFinCompra = document.querySelector("button.btn__comprar--cart#finalizarcompra")
+const btnFinCompra = document.querySelector("button.btn__comprar--cart#finalizarcompra");
+const btnReturn = document.querySelector("button.btn__seguircomprando--sty");
 
 
 const carrito = JSON.parse(localStorage.getItem("dataJuego")) || []
@@ -119,3 +120,9 @@ btnFinCompra.addEventListener('click', () => {
     detalleCarrito.innerHTML = "";
     totalCarrito.textContent = "$ 0.00 USD";
 })
+btnFinCompra.addEventListener("mouseover", ()=> {
+    btnFinCompra.title = "Click aqui para finalizar tu compra"
+});
+btnReturn.addEventListener("mouseover", ()=> {
+    btnReturn.title = "Volver a la plataforma playstation"
+});
