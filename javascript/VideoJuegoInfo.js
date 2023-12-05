@@ -78,7 +78,7 @@ class VideoJuegoInfo {
         this.genero = juegos.genero;
         this.precioReal = juegos.precio;
         this.descuento = juegos.descuento;
-        this.precioFinal = parseFloat(this.precioReal) - (parseFloat(this.precioReal * (parseFloat(this.descuento)/100)));
+        this.precioFinal = parseFloat(this.precioReal) - parseFloat((this.precioReal) * (this.descuento/100));
         this.plataforma = juegos.plataforma;
         // pinto lada data en el html de acuerdo al indice obtenido por cada id
         this.mostrarInfo();
@@ -94,3 +94,4 @@ class VideoJuegoInfo {
 const vidoJuego = new VideoJuegoInfo();
 // llamo el metodo que me obtiene la informacion de cada juego
 vidoJuego.cargarJuego();
+

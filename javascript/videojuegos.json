@@ -9,8 +9,8 @@
             "textos": "Español Latino",
             "peso": "85 GB",
             "genero": "Accion - Aventura",
-            "precio": "80",
-            "descuento": "70",
+            "precio": 80,
+            "descuento": 70,
             "plataforma": "Playstation"
         },
         {   
@@ -22,8 +22,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "100",
-            "descuento": "15",
+            "precio": 100,
+            "descuento": 15,
             "plataforma": "Playstation"
         },
         {   
@@ -35,8 +35,8 @@
             "textos": "Español Latino",
             "peso": "85 GB",
             "genero": "Accion - Aventura - Terror",
-            "precio": "60",
-            "descuento": "50",
+            "precio": 60,
+            "descuento": 50,
             "plataforma": "Playstation"
         },
         {   
@@ -48,8 +48,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "50",
-            "descuento": "50",
+            "precio": 50,
+            "descuento": 50,
             "plataforma": "Playstation"
         },
         {   
@@ -61,8 +61,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "65",
-            "descuento": "15",
+            "precio": 65,
+            "descuento": 15,
             "plataforma": "Playstation"
         },
         {   
@@ -74,8 +74,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "65",
-            "descuento": "25",
+            "precio": 65,
+            "descuento": 25,
             "plataforma": "Playstation"
         },
         {   
@@ -87,8 +87,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "80",
-            "descuento": "15",
+            "precio": 80,
+            "descuento": 15,
             "plataforma": "Playstation"
         },
         {   
@@ -100,8 +100,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "50",
-            "descuento": "50",
+            "precio": 50,
+            "descuento": 50,
             "plataforma": "Playstation"
         },
         {   
@@ -113,8 +113,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "50",
-            "descuento": "40",
+            "precio": 50,
+            "descuento": 40,
             "plataforma": "Playstation"
         },
         {   
@@ -126,8 +126,10 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "60",
-            "plataforma": "70"
+            "precio": 60,
+            "descuento": 70,
+            "plataforma": "Playstation"
+
         },
         {   
             "id": 11,
@@ -138,8 +140,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "65",
-            "descuento": "30",
+            "precio": 65,
+            "descuento": 30,
             "plataforma": "Playstation"
         },
         {   
@@ -151,8 +153,8 @@
             "textos": "Español Latino",
             "peso": "98 GB",
             "genero": "Accion - Aventura",
-            "precio": "50",
-            "descuento": "60",
+            "precio": 50,
+            "descuento": 60,
             "plataforma": "Playstation"
         },
         {
@@ -164,8 +166,8 @@
             "textos": "Español Latino",
             "peso": "40 GB",
             "genero": "Accion - Aventura - Terror",
-            "precio": "50",
-            "descuento": "30",
+            "precio": 50,
+            "descuento": 30,
             "plataforma": "Xbox"
         },
         {   
@@ -177,8 +179,8 @@
             "textos": "Español Latino",
             "peso": "150 GB",
             "genero": "Accion - Aventura",
-            "precio": "40",
-            "descuento": "30",
+            "precio": 40,
+            "descuento": 30,
             "plataforma": "Xbox"
         },
         {   
@@ -190,8 +192,8 @@
             "textos": "Español Latino",
             "peso": "150 GB",
             "genero": "Accion - Aventura",
-            "precio": "100",
-            "descuento": "15",
+            "precio": 100,
+            "descuento": 15,
             "plataforma": "Xbox"
         },
         {   
@@ -203,8 +205,8 @@
             "textos": "Español Latino",
             "peso": "94 GB",
             "genero": "Accion - Terror",
-            "precio": "50",
-            "descuento": "50",
+            "precio": 50,
+            "descuento": 50,
             "plataforma": "Xbox"
         },
         {   
@@ -216,8 +218,8 @@
             "textos": "Español Latino",
             "peso": "50 GB",
             "genero": "Accion - Aventura",
-            "precio": "65",
-            "descuento": "30",
+            "precio": 65,
+            "descuento": 30,
             "plataforma": "Xbox"
         },
         {   
@@ -229,8 +231,8 @@
             "textos": "Español Latino",
             "peso": "5 GB",
             "genero": "Accion - Aventura",
-            "precio": "35",
-            "descuento": "10",
+            "precio": 35,
+            "descuento": 10,
             "plataforma": "Xbox"
         },
         {   
@@ -242,8 +244,8 @@
             "textos": "Español Latino",
             "peso": "110 GB",
             "genero": "Carreras - Autos",
-            "precio": "60",
-            "descuento": "25",
+            "precio": 60,
+            "descuento": 25,
             "plataforma": "Xbox"
         },
         {   
@@ -255,8 +257,8 @@
             "textos": "Español Latino",
             "peso": "12 GB",
             "genero": "Accion - Aventura",
-            "precio": "50",
-            "descuento": "85",
+            "precio": 50,
+            "descuento": 35,
             "plataforma": "Xbox"
         },
         {   
@@ -268,8 +270,8 @@
             "textos": "Español Latino",
             "peso": "43 GB",
             "genero": "Accion - Aventura",
-            "precio": "80",
-            "descuento": "40",
+            "precio": 80,
+            "descuento": 40,
             "plataforma": "Xbox"
         },
         {   
@@ -281,8 +283,8 @@
             "textos": "Español Latino",
             "peso": "50 GB",
             "genero": "Accion - Aventura",
-            "precio": "55",
-            "descuento": "35",
+            "precio": 55,
+            "descuento": 35,
             "plataforma": "Xbox"
         },
         {   
@@ -294,8 +296,8 @@
             "textos": "Español Latino",
             "peso": "80 GB",
             "genero": "Accion - Aventura",
-            "precio": "65",
-            "descuento": "30",
+            "precio": 65,
+            "descuento": 30,
             "plataforma": "Xbox"
         },
         {   
@@ -307,8 +309,8 @@
             "textos": "Español Latino",
             "peso": "130 GB",
             "genero": "Carreras - Autos",
-            "precio": "50",
-            "descuento": "60",
+            "precio": 50,
+            "descuento": 60,
             "plataforma": "Xbox"
         }
     ]

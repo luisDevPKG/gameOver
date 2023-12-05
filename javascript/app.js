@@ -1,4 +1,5 @@
 const opcionSelect = document.querySelector("select.form-select#plataformas");
+const btnIconCart = document.querySelector("svg.nav-icon__img-sty");
 
 // agrego un evento de cambio dependiendo de la opcion marcada en el select
 opcionSelect.addEventListener("change", ()=> {
@@ -43,3 +44,31 @@ function buscar(plataforma) {
 
     plataforma.mostrarJuegosFiltrados(juegoFiltrado);
 }
+
+// Redirige a la pagina de pago del juego al hacer clic directamente en el boton comprar
+function redirigePago(id){
+    // ubico a la pagina a la que quiero redirigir
+    window.location.href = "../page/pago.html?id=" + id;
+}
+
+// Carrito compras
+btnIconCart.addEventListener('click', ()=> {
+    // redirigir al detalle del carrito de compras
+    window.location.href = "../page/checkoutJuegos.html";
+});
+
+
+// actualizacion de la cantidad en el carrito de compras
+function actualizarContadorCarrito() {
+
+    // Obtener el elemento que muestra la cantidad en el botón de carrito
+    const contadorCarrito = document.querySelector("span#contador-productos");
+
+    const leerCarrito = JSON.parse(localStorage.getItem("dataJuego")) || [];
+    // Calcula la cantidad total en el carrito
+    const cantidadCarrito = leerCarrito.reduce((acc, juego) => acc + juego.cantidad,0);
+    // Actualizo el contenido del elemento con la nueva cantidad
+    contadorCarrito.textContent = cantidadCarrito;
+}
+// Llamo al cargar la página
+actualizarContadorCarrito();

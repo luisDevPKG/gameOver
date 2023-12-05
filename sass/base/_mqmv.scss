@@ -8,12 +8,54 @@
             & .container-fluid {
 
                 & .navbar-collapse {
+
                     & .formulario-search {
                         width: 94%;
                 
                         & .buscar {
                             // width: 20rem;
                             width: 50%;
+                        }
+                    }
+
+                    & .nav-icon {
+
+                        & .contar-productos {
+                            right: 42%;
+                        }
+
+                        & .contenedor-productos-carrito {
+                            top: 100%;
+                            right: 4%;
+                            width: 93%;
+
+                            & .productos-carrito {
+
+                                & .info-producto-carrito {
+
+                                    & .cantidad-producto-carrito {
+                                        font-size: 1.5rem;
+                                        margin-right: 2rem;
+                                    }
+    
+                                    & .nombre-producto {
+                                        font-size: 1.5rem;
+                                        margin-right: 1rem;
+
+                                    }
+    
+                                    & .tipo-cuenta {
+                                        font-size: 1.5rem;
+                                        margin-right: 1rem;
+                                    }
+    
+                                    & .precio-producto {
+                                        font-size: 1.5rem;
+                                        margin-left: .5rem;
+                                        margin-right: 1.3rem;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -72,5 +114,19 @@
         & .card {
             width: 31rem;
         }
+    }
+    /* carrito compras*/
+    .btn__comprar {
+
+        & .btn__comprar--cart {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    
+        & .btn__seguircomprando--sty {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Metas SEO -->
-    <meta name="description" content="Video juegos explusivos en las plataformas PlayStation">
+    <meta name="description" content="Video juegos Good Of War Ragnarok PlayStation">
     <meta name="keywords" content="Plataformas, Video juegos, Video games, Exclusivos, PlayStation">
     <!-- Aqui termina las metas para el SEO-->
     <link rel="shortcut icon" href="../assets/logo-game-over.png" type="image/x-icon">
@@ -15,11 +15,9 @@
     <!-- para mayor performance -->
     <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Agregando animacion a las cards -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Agregando bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Game Over | Press Start... - PlayStation</title>
+    <title>Game Over | Press Start...</title>
 </head>
 <body>
     <header>
@@ -45,9 +43,9 @@
                   </li>
                   <li class="nav-item">
                     <select class="form-select select__pfm--st" id="plataformas" aria-label="Plataformas">
-                        <option disabled >Plataformas</option>
-                        <option selected value="./playstation.html">PlayStation</option>
-                        <option value="./xbox.html">Xbox</option>
+                        <option disabled selected>Plataformas</option>
+                        <option value="../page/playstation.html">PlayStation</option>
+                        <option value="../page/xbox.html">Xbox</option>
                     </select>
                   </li>
                   <li class="nav-item">
@@ -60,19 +58,18 @@
                     <a class="nav-link active" aria-current="page" href="./contactanos.html">Contactanos</a>
                   </li>
                 </ul>
-                <div class="d-flex formulario-search" role="search">
-                  <input class="form-control me-2 buscar" type="text" placeholder="Buscar" aria-label="Search" id="buscar">
-                  <button class="btn-st" id="btn-buscar">Buscar</button>
-                </div>
+                <form class="d-flex formulario-search" role="search">
+                  <input class="form-control me-2 buscar" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn-st" type="submit">Buscar</button>
+                </form>
                 <div class="nav-icon">
                     <div class="nav-icon__img">
-                        <!-- <img class="nav-icon__img-sty" src="../assets/icons/cart.png" alt="icon carrito compras"> -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav-icon__img-sty">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
                     </div>
                     <div class="contar-productos">
-                      <span id="contador-productos"></span>
+                      <span id="contador-productos">0</span>
                     </div>
                 </div>
               </div>
@@ -80,17 +77,41 @@
         </nav>
     </div>
     <main class="main">
-        <section class="exclusivos">
-            <h2 class="exclusivo__consola--st">Exclusivos Playstation</h2>
-            <!-- card juegos playstation -->
-            <div class="container container__plataforma" >
-                <div class="card-container" id="card-template" data-aos="fade-up" data-aos-duration="1500">
-                    <!-- se generar las cards -->
-                </div>
-            </div>
-        </section>
+      <section class="table-container">
+        <table class="table table-striped table--sty">
+            <thead>
+              <tr>
+                <th scope="col" id="cantidad" class="cantidad">Cantidad</th>
+                <th scope="col" id="nombrejuego" class="nombre">Nombre Juego</th>
+                <th scope="col" id="tipocuenta" class="cuenta">Tipo Cuenta</th>
+                <th scope="col" id="precio" class="precio">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th></th>
+                <td></td>
+                <td>No se han agregado productos</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL: </td>
+                    <td id="totalCarrito"></td>
+                </tr>
+            </tfoot>
+        </table>
+      </section>
+    <div class="card-body btn__comprar">
+      <button class="btn__seguircomprando--sty"><a href="playstation.html">Seguir comprando</a></button>
+      <button class="btn__comprar--cart" id="finalizarcompra">Finalizar Compra</button>
+    </div>
     </main>
-    <footer>
+    <footer class="clearfix">
         <div class="redes">
             <h3>Siguenos</h3>
             <div class="redes-icon">
@@ -103,18 +124,11 @@
             <p class="copyrigth-info">Proyecto practica HTML y CSS - Todos los derechos reservados.  Luis Fernando Mosquera</p>
         </div>
     </footer>
-    <!-- Redirige a la Plataforma deseada -->
     <script src="../javascript/app.js"></script>
-    <script src="../javascript/videojuegosdata.js"></script>
-    <script src="../javascript/Plataforma.js" ></script>
-    <!-- <script src="../javascript/carritoCompra.js" ></script> -->
+    <script src="../javascript/carritoCompra.js" ></script>
+    <!-- Complemento alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Complemento Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <!-- Complemento animacion -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Iniciando AOS para la animacion -->
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>

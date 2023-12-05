@@ -1,0 +1,48 @@
+.table-container {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+
+    & .table--sty {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 2rem;
+
+        & tr {
+            font-size: 1.5rem;
+        }
+    }
+}
+.btn__comprar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    & .btn__comprar--cart {
+        @include btn-comprar;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        &:hover {
+            background-color: #15E515;
+            cursor: pointer;
+            transition: color 0.5s;
+        }
+    }
+
+    & .btn__seguircomprando--sty {
+        @include btn-seguir-comprando;
+        margin-left: 2rem;
+
+        & a {
+            text-decoration: none;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: #33BBFF;
+            cursor: pointer;
+            transition: color 0.5s;
+        }
+    }
+}

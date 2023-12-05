@@ -32,6 +32,7 @@
 /* Estilo del precio descuento al juego - Formulario Pago*/
 /* Estilo del porcentaje descuento al juego - Formulario Pago*/
 /* Estilo del precio con descuento al juego - Formulario Pago*/
+/* Boton seguir comprando */
 /* base */
 html {
   font-size: 62.5%; /* para hacer uso del rem sin problema -- 1 rem = 10px */
@@ -47,7 +48,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background);
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* Asegura que el cuerpo tenga al menos el 100% del alto de la ventana */
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
 }
 
 /* -- Estilos Header -- */
@@ -148,10 +156,103 @@ header {
   cursor: pointer;
   background-color: aqua;
 }
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon {
+  margin-left: 2rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img {
+  position: relative;
+}
 .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img .nav-icon__img-sty {
-  margin-left: 5rem;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
+  stroke: #000000;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img:hover {
+  cursor: pointer;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contar-productos {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  background-color: #000000;
+  color: #ffffff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon #contador-productos {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito {
+  position: absolute;
+  top: 6.6rem;
+  right: 0;
+  background-color: #ffffff;
+  width: 50rem;
+  z-index: 1;
+  border: solid;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .cantidad-producto-carrito {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .nombre-producto {
+  font-size: 2rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .tipo-cuenta {
+  font-size: 2rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .precio-producto {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  margin-right: 1.3rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .icon-close {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .icon-close:hover {
+  stroke: red;
+  cursor: pointer;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .carrito-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .carrito-total h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .carrito-total .total-pagar {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .carrito-oculto {
+  display: none;
 }
 
 /* Ofertas */
@@ -664,6 +765,63 @@ header {
   margin: 0 0.5rem;
 }
 
+/* Checkout */
+.table-container {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.table-container .table--sty {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.table-container .table--sty tr {
+  font-size: 1.5rem;
+}
+
+.btn__comprar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.btn__comprar .btn__comprar--cart {
+  padding: 0.5rem 3rem;
+  background-color: green;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid green;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.btn__comprar .btn__comprar--cart:hover {
+  background-color: #15E515;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.btn__comprar .btn__seguircomprando--sty {
+  padding: 0.5rem 3rem;
+  background-color: blue;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: solid blue;
+  margin-left: 2rem;
+}
+.btn__comprar .btn__seguircomprando--sty a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn__comprar .btn__seguircomprando--sty:hover {
+  background-color: #33BBFF;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
 /* Quienes somos */
 .container-principal {
   margin-bottom: 5rem;
@@ -809,27 +967,32 @@ header {
   background-color: aqua;
   color: black;
 }
+
 /* Estilo swal alert - contactanos */
 .swal-icon-class {
   margin-top: 3rem;
   width: 6rem;
   height: 6rem;
 }
+
 .swal-container-class {
   width: 50rem;
   height: 40rem;
 }
+
 .swal-title-class {
   font-size: 4rem;
   padding: unset;
 }
+
 .swal-html-container-class {
   font-size: 2rem !important;
 }
+
 .swal-confirm-button-class {
   width: 9rem;
   height: 5rem;
-  font-size: 2rem !important;;
+  font-size: 2rem !important;
 }
 
 /* Media queries */
@@ -890,6 +1053,10 @@ header {
     margin: 0 auto;
   }
   .game-info .grid-container-pago .card-container-form-pago {
+    width: 90%;
+  }
+  /* -- Checkout -- */
+  .table-container .table--sty {
     width: 90%;
   }
   /* -- Planes y precios -- */
@@ -967,7 +1134,7 @@ header {
     margin-left: 1.1vw;
     margin-bottom: 1rem;
     height: 3rem;
-    width: 100%;
+    width: 99%;
   }
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 80%;
@@ -980,9 +1147,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
   }
-  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .nav-icon__img .nav-icon__img-sty {
-    padding-bottom: 0.5rem;
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contar-productos {
+    top: 91%;
+    right: 47%;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito {
+    top: 36.6rem;
+    right: 25rem;
   }
   /* Ofertas */
   .ofertas .promociones {
@@ -1055,6 +1228,10 @@ header {
     margin-top: 3rem;
     width: 50%;
   }
+  /* -- Checkout -- */
+  .table-container .table--sty {
+    width: 97%;
+  }
   /* Footer */
   .redes h3 {
     width: 15%;
@@ -1125,6 +1302,10 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 80%;
   }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito {
+    top: 100%;
+    right: 18%;
+  }
   .ofertas h2 {
     font-size: 3.3rem;
   }
@@ -1164,6 +1345,9 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .btn-st {
     margin-left: unset;
     width: 10rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contar-productos {
+    right: 46%;
   }
   /* Ofertas */
   .ofertas h2 {
@@ -1300,6 +1484,31 @@ header {
   .nav-bar .contenedor .container-fluid .navbar-collapse .formulario-search .buscar {
     width: 50%;
   }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contar-productos {
+    right: 42%;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito {
+    top: 100%;
+    right: 4%;
+    width: 93%;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .cantidad-producto-carrito {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .nombre-producto {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .tipo-cuenta {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  .nav-bar .contenedor .container-fluid .navbar-collapse .nav-icon .contenedor-productos-carrito .productos-carrito .info-producto-carrito .precio-producto {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1.3rem;
+  }
   /* Ofertas */
   .ofertas .promociones {
     height: 84rem;
@@ -1336,6 +1545,15 @@ header {
   /* Planes y precios */
   .planes .planes-info .card {
     width: 31rem;
+  }
+  /* carrito compras*/
+  .btn__comprar .btn__comprar--cart {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .btn__comprar .btn__seguircomprando--sty {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 

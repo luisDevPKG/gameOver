@@ -70,7 +70,6 @@ function guardarDatosUsuario(){
 
             // setea el formulario
             form.reset();
-
             localStorage.setItem("dataUsuario", JSON.stringify(dataUsuario))
             return true
         }

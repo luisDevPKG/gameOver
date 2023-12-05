@@ -88,6 +88,14 @@
             }
         }
     }
+    /* -- Checkout -- */
+    .table-container {
+
+        & .table--sty {
+            width: 90%;
+        }
+    }
+
     /* -- Planes y precios -- */
     .planes .planes-info {
         grid-template-rows: unset;

@@ -24,7 +24,7 @@ class Plataforma {
                         <p class="card__text--st">${videojuego.descripcion}</p>
                     </div>
                     <div class="card-body btn__comprar">
-                        <button class="btn__comprar--st" onclick="redirigePago(${videojuego.id})">Comprar</button>
+                        <button class="btn__comprar--st" onclick="redirigePago(${videojuego.id})">Ver información</button>
                     </div>
                 </div>`;
     }
@@ -46,7 +46,7 @@ class Plataforma {
         const btnVerInfo = document.querySelectorAll("button.btn__comprar--st")
         btnVerInfo.forEach(boton => {
             boton.addEventListener("mouseover", ()=> {
-                boton.title = "Click aqui para agregar al carrito"
+                boton.title = "Click aqui para ver información"
             })
         })
     }

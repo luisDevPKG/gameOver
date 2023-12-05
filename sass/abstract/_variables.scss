@@ -278,3 +278,13 @@ $contenedor: juego-1, juego-2, juego-3;
     font-size: 2rem;
     padding: 0 1rem;
 }
+/* Boton seguir comprando */
+@mixin btn-seguir-comprando {
+    padding: .5rem 3rem;
+    background-color: blue;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: solid blue;
+}
