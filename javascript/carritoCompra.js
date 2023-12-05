@@ -112,6 +112,9 @@ btnFinCompra.addEventListener('click', () => {
     // actualizar el precio
     precioTotalCarrito();
 
+    // actuallizo la cantidad en el icono de carrito de compras
+    actualizarContadorCarrito();
+
     // limpio el contenido de la tabla después de finalizar la compra
     detalleCarrito.innerHTML = "";
     totalCarrito.textContent = "$ 0.00 USD";

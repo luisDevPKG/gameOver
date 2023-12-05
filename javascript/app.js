@@ -61,11 +61,11 @@ btnIconCart.addEventListener('click', ()=> {
 // actualizacion de la cantidad en el carrito de compras
 function actualizarContadorCarrito() {
 
-    // Obtener el elemento que muestra la cantidad en el botón de carrito
+    // Obtengo el elemento que muestra la cantidad en el botón de carrito
     const contadorCarrito = document.querySelector("span#contador-productos");
 
     const leerCarrito = JSON.parse(localStorage.getItem("dataJuego")) || [];
-    // Calcula la cantidad total en el carrito
+    // Calculo la cantidad total en el carrito
     const cantidadCarrito = leerCarrito.reduce((acc, juego) => acc + juego.cantidad,0);
     // Actualizo el contenido del elemento con la nueva cantidad
     contadorCarrito.textContent = cantidadCarrito;

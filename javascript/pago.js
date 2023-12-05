@@ -87,7 +87,7 @@ function comprarJuego() {
     };
 
     localStorage.setItem("dataJuego", JSON.stringify(carrito));
-    // Actualizar el contador en el botón de carrito
+    // Actualizo el contador en el botón de carrito
     actualizarContadorCarrito();
 
     Swal.fire({
