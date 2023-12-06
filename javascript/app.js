@@ -54,7 +54,7 @@ function redirigePago(id){
 // Carrito compras
 btnIconCart.addEventListener('click', ()=> {
     // redirigir al detalle del carrito de compras
-    window.location.href = "../page/checkoutJuegos.html";
+    window.location.href = "./page/checkoutJuegos.html";
 });
 
 
