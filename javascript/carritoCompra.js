@@ -62,6 +62,8 @@ detalleCarrito.addEventListener('click', function(e) {
             const juego = carrito[index];
             if (juego.cantidad > 1 ){
                 juego.cantidad -= 1;
+                // actualizo el valor del precio al eliminar la cantidad
+                juego.precio = (juego.precio / (juego.cantidad + 1)) * juego.cantidad;
             } else {
                 // Si la cantidad es 1, elimino el juego del carrito
                 detalleCarrito.removeChild(fila);
@@ -71,6 +73,7 @@ detalleCarrito.addEventListener('click', function(e) {
             actualizarCarrito();
             cargaJuegosCarrito(); // Actualizo la tabla
             precioTotalCarrito();
+            actualizarContadorCarrito(); // Actualizo la cantidad en el icono del carrito compras
         }
     }
 });
